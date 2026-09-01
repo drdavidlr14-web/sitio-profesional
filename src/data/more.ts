@@ -1,7 +1,7 @@
 export const teaching = {
   intro: {
-    es: 'David López Romero cuenta con más de cinco años de experiencia docente a nivel profesional en universidades mexicanas. Imparte asignaturas de relaciones internacionales, ciudadanía global y movilidad humana, y participa de forma puntual como profesor o ponente invitado.',
-    en: 'David López Romero has more than five years of professional-level university teaching experience. He teaches courses in international relations, global citizenship and human mobility at Mexican universities, and is occasionally invited as a guest lecturer or speaker.',
+    es: 'David López Romero cuenta con más de cinco años de experiencia docente a nivel profesional. Imparte asignaturas de relaciones internacionales, ciudadanía global y movilidad humana, y participa de forma puntual como profesor o ponente invitado.',
+    en: 'David López Romero has more than five years of professional-level teaching experience. He teaches courses in international relations, global citizenship and human mobility, and is occasionally invited as a guest lecturer or speaker.',
   },
   posts: [
     {
@@ -98,13 +98,11 @@ export const credentials = {
 }
 
 export const advisory = [
-  { es: 'Miembro de la Red Intersectorial para la Integración de Personas en Movilidad · Fundación Causa (2023 — )', en: 'Member of the Intersectoral Network for the Integration of People on the Move · Fundación Causa (2023 — )' },
   { es: 'Consejero del Consejo Ciudadano de Seguimiento de Políticas Públicas en Materia de Juventud · Instituto Mexicano de la Juventud (2022–2023; 2024–2025)', en: 'Counsellor of the Citizens’ Council for Monitoring Public Youth Policy · Mexican Youth Institute (2022–2023; 2024–2025)' },
   { es: 'Miembro del Comité de Buenas Prácticas Empresariales Incluyentes · Servicio Nacional de Empleo Querétaro (2022–2025)', en: 'Member of the Inclusive Business Practices Committee · National Employment Service of Querétaro (2022–2025)' },
   { es: 'Miembro de la Comisión Agenda 2030 · Confederación Patronal de la República Mexicana, Querétaro (2023–2024)', en: 'Member of the 2030 Agenda Commission · Employers’ Confederation of the Mexican Republic, Querétaro (2023–2024)' },
   { es: 'Miembro de la Red de Expertos en Paradiplomacia e Internacionalización Territorial (2021 — )', en: 'Member of the Network of Experts in Paradiplomacy and Territorial Internationalisation (2021 — )' },
   { es: 'Miembro del Observatorio Ciudadano para la Implementación de la Agenda 2030 en el Estado de Querétaro, en el marco del Plan Estatal de Desarrollo 2021–2027', en: 'Member of the Citizens’ Observatory for Implementation of the 2030 Agenda in the State of Querétaro, within the State Development Plan 2021–2027' },
-  { es: 'Participante del Laboratorio de Integración (InLab) · Proyecto PROFIL de la Deutsche Gesellschaft für Internationale Zusammenarbeit y el Alto Comisionado de las Naciones Unidas para los Refugiados (2021)', en: 'Participant in the Integration Lab (InLab) · PROFIL project of the Deutsche Gesellschaft für Internationale Zusammenarbeit and the United Nations High Commissioner for Refugees (2021)' },
 ]
 
 export const letter = {
