@@ -1,7 +1,7 @@
 export const teaching = {
   intro: {
-    es: 'La práctica docente de David López Romero se desarrolla en universidades mexicanas, con asignaturas de relaciones internacionales, ciudadanía global y movilidad humana, y con participaciones puntuales como profesor o ponente invitado.',
-    en: 'David López Romero teaches at Mexican universities, with courses in international relations, global citizenship and human mobility, and with occasional invitations as guest lecturer or speaker.',
+    es: 'David López Romero cuenta con más de cinco años de experiencia docente a nivel profesional en universidades mexicanas. Imparte asignaturas de relaciones internacionales, ciudadanía global y movilidad humana, y participa de forma puntual como profesor o ponente invitado.',
+    en: 'David López Romero has more than five years of professional-level university teaching experience. He teaches courses in international relations, global citizenship and human mobility at Mexican universities, and is occasionally invited as a guest lecturer or speaker.',
   },
   posts: [
     {
