@@ -9,7 +9,7 @@ export function Header() {
   const [open, setOpen] = React.useState(false)
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0b1f38]/95 text-white backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[#c4a46a]/25 bg-[#0b1f38]/95 text-white backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img src="/images/logo.png" alt="DLR" className="h-9 w-9 object-contain" />
@@ -53,7 +53,12 @@ export function Header() {
         <div className="border-t border-white/10 px-5 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {nav.map((item) => (
-              <Link key={item.to} to={item.to} onClick={() => setOpen(false)} className="text-sm uppercase tracking-[0.14em] text-white/90">
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={() => setOpen(false)}
+                className="text-sm uppercase tracking-[0.14em] text-white/90"
+              >
                 {t({ es: item.es, en: item.en })}
               </Link>
             ))}

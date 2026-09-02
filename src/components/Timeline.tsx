@@ -4,13 +4,17 @@ import { useI18n } from '~/utils/i18n'
 export function Timeline() {
   const { t } = useI18n()
   return (
-    <ol className="relative space-y-8 border-l border-[#0b1f38]/15 pl-6">
+    <ol className="space-y-4">
       {timeline.map((item) => (
-        <li key={`${item.year}-${item.title.es}`} className="relative">
-          <span className="absolute -left-[29px] top-1.5 h-3 w-3 rounded-full bg-[#c4a46a]" />
-          <p className="text-xs tracking-[0.18em] uppercase text-[#c4a46a]">{item.year}</p>
-          <h3 className="mt-1 text-lg text-[#0b1f38]">{t(item.title)}</h3>
-          <p className="mt-1 max-w-2xl text-sm leading-relaxed text-[#5c6b7a]">{t(item.detail)}</p>
+        <li
+          key={`${item.year}-${item.title.es}`}
+          className="grid gap-4 rounded-2xl border border-[#0b1f38]/10 bg-white p-5 md:grid-cols-[7rem_1fr] md:items-start"
+        >
+          <p className="text-sm font-medium tracking-[0.14em] text-[#c4a46a]">{item.year}</p>
+          <div>
+            <h3 className="text-lg text-[#0b1f38]">{t(item.title)}</h3>
+            <p className="mt-1 max-w-3xl text-sm leading-relaxed text-[#5c6b7a]">{t(item.detail)}</p>
+          </div>
         </li>
       ))}
     </ol>
