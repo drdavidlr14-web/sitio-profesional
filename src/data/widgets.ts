@@ -5,6 +5,59 @@ export const stats = [
   { value: '2018—', es: 'Recorrido documentado', en: 'Documented path' },
 ]
 
+export const places = [
+  {
+    id: 'qro',
+    x: 28,
+    y: 58,
+    title: { es: 'Querétaro', en: 'Querétaro' },
+    text: {
+      es: 'Base de trabajo: albergue, universidades, red intersectorial y consejos locales.',
+      en: 'Working base: shelter, universities, intersectoral network and local councils.',
+    },
+  },
+  {
+    id: 'mex',
+    x: 34,
+    y: 64,
+    title: { es: 'Estado de México', en: 'State of Mexico' },
+    text: {
+      es: 'Servicio social en el DIF y vinculación con Nestlé Planta Toluca; congreso en Campus Toluca.',
+      en: 'Professional service at DIF and partnership with Nestlé Toluca Plant; congress at the Toluca Campus.',
+    },
+  },
+  {
+    id: 'uk',
+    x: 48,
+    y: 32,
+    title: { es: 'Reino Unido', en: 'United Kingdom' },
+    text: {
+      es: 'Acompañamiento de inmersiones académicas del Tecnológico de Monterrey.',
+      en: 'Academic immersions with Tecnológico de Monterrey.',
+    },
+  },
+  {
+    id: 'fr',
+    x: 51,
+    y: 36,
+    title: { es: 'Francia', en: 'France' },
+    text: {
+      es: 'Acompañamiento de inmersiones académicas del Tecnológico de Monterrey.',
+      en: 'Academic immersions with Tecnológico de Monterrey.',
+    },
+  },
+  {
+    id: 'jp',
+    x: 82,
+    y: 38,
+    title: { es: 'Japón', en: 'Japan' },
+    text: {
+      es: 'Representación de México en el International Youth Development Exchange Program (INDEX).',
+      en: 'Represented Mexico in the International Youth Development Exchange Program (INDEX).',
+    },
+  },
+]
+
 export const axes = [
   {
     n: '01',
