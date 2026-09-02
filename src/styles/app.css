@@ -32,3 +32,37 @@ h3,
 ::selection {
   background: #c4a46a55;
 }
+
+.gold-rule {
+  width: 3.5rem;
+  height: 2px;
+  background: var(--color-gold);
+}
+
+.card-lift {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(11, 31, 56, 0.08);
+  border-color: rgba(196, 164, 106, 0.45);
+}
+
+.photo-tile img {
+  transition: transform 500ms ease;
+}
+
+.photo-tile:hover img {
+  transform: scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-lift,
+  .photo-tile img {
+    transition: none;
+  }
+  .card-lift:hover {
+    transform: none;
+  }
+}
