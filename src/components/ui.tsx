@@ -43,9 +43,9 @@ export function SectionHead({
         <h2 className="mt-2 text-3xl text-[#0b1f38]">{t(title)}</h2>
       </div>
       {to && action ? (
-        <Link to={to} className="shrink-0 text-sm text-[#1a3a63] underline underline-offset-4">
+        <a href={to} className="shrink-0 text-sm text-[#1a3a63] underline underline-offset-4">
           {t(action)}
-        </Link>
+        </a>
       ) : null}
     </header>
   )
