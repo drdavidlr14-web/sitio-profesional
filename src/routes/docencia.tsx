@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { ClassroomLab } from '~/components/apps'
 import { ContactBand, PageIntro } from '~/components/ui'
 import { teaching } from '~/data/site'
 import { useI18n } from '~/utils/i18n'
@@ -13,6 +14,9 @@ function Page() {
     <>
       <main className="mx-auto max-w-6xl px-5 py-16">
         <PageIntro kicker={{ es: 'Aula', en: 'Classroom' }} title={{ es: 'Docencia', en: 'Teaching' }} lead={teaching.intro} />
+        <div className="mt-10">
+          <ClassroomLab />
+        </div>
         <div className="mt-14 space-y-8">
           {teaching.posts.map((p) => (
             <article key={p.school} className="grid overflow-hidden rounded-2xl border border-[#0b1f38]/10 bg-white md:grid-cols-[1.2fr_0.8fr]">
@@ -23,11 +27,7 @@ function Page() {
                 <div className="gold-rule my-5" />
                 <p className="text-sm leading-relaxed text-[#5c6b7a]">{t(p.notes)}</p>
               </div>
-              {p.img ? (
-                <img src={p.img} alt={p.school} className="h-56 w-full object-cover md:h-full" />
-              ) : (
-                <div className="hidden bg-[#0b1f38]/5 md:block" />
-              )}
+              {p.img ? <img src={p.img} alt={p.school} className="h-56 w-full object-cover md:h-full" /> : <div className="hidden bg-[#0b1f38]/5 md:block" />}
             </article>
           ))}
         </div>

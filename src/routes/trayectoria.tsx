@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { YearDeck } from '~/components/apps'
 import { PhotoArchive } from '~/components/PhotoArchive'
 import { PressList } from '~/components/PressList'
 import { RoleMedia } from '~/components/RoleMedia'
@@ -30,7 +31,10 @@ function Page() {
         </section>
         <section className="mt-16">
           <h2 className="mb-6 text-2xl text-[#0b1f38]">{t({ es: 'Línea de tiempo', en: 'Timeline' })}</h2>
-          <Timeline />
+          <YearDeck />
+          <div className="mt-8">
+            <Timeline />
+          </div>
         </section>
         <section className="mt-16">
           <h2 className="mb-6 text-2xl text-[#0b1f38]">{t({ es: 'Consejos y redes', en: 'Advisory and networks' })}</h2>
