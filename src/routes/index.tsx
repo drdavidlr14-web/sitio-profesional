@@ -1,8 +1,9 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
+import { Atlas, ClassroomLab, CountStats, LiveDesk, YearDeck } from '~/components/apps'
 import { PhotoArchive } from '~/components/PhotoArchive'
 import { RoleMedia } from '~/components/RoleMedia'
-import { ContactBand, FocusGrid, SectionHead, StatBar } from '~/components/ui'
-import { hero, profile, teaching } from '~/data/site'
+import { ContactBand, FocusGrid, SectionHead } from '~/components/ui'
+import { hero, profile } from '~/data/site'
 import { useI18n } from '~/utils/i18n'
 
 export const Route = createFileRoute('/')({
@@ -42,13 +43,25 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-12 md:py-16">
-        <StatBar />
+        <div className="grid gap-4 md:grid-cols-[0.9fr_1.4fr]">
+          <LiveDesk />
+          <CountStats />
+        </div>
         <p className="mt-10 max-w-3xl text-lg leading-relaxed text-[#1a3a63]">{t(profile)}</p>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-16">
         <SectionHead kicker={{ es: 'Mapa', en: 'Map' }} title={{ es: 'Tres ejes de trabajo', en: 'Three lines of work' }} />
         <FocusGrid />
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pb-16">
+        <SectionHead kicker={{ es: 'Tablero', en: 'Board' }} title={{ es: 'Apps de consulta', en: 'Reference apps' }} />
+        <div className="space-y-6">
+          <Atlas />
+          <YearDeck />
+          <ClassroomLab />
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-16">
@@ -59,30 +72,6 @@ function Home() {
           action={{ es: 'Trayectoria completa', en: 'Full experience' }}
         />
         <RoleMedia kinds={['practice']} />
-      </section>
-
-      <section className="bg-white/60 py-16">
-        <div className="mx-auto max-w-6xl px-5">
-          <SectionHead
-            kicker={{ es: 'Aula', en: 'Classroom' }}
-            title={{ es: 'Docencia', en: 'Teaching' }}
-            to="/docencia"
-            action={{ es: 'Ver más', en: 'Read more' }}
-          />
-          <p className="mb-8 max-w-3xl text-[#5c6b7a]">{t(teaching.intro)}</p>
-          <div className="grid gap-4 md:grid-cols-3">
-            {teaching.posts.map((p) => (
-              <article key={p.school} className="card-lift overflow-hidden rounded-2xl border border-[#0b1f38]/10 bg-white">
-                {p.img ? <img src={p.img} alt="" className="h-32 w-full object-cover" /> : null}
-                <div className="p-5">
-                  <p className="text-xs uppercase tracking-[0.14em] text-[#c4a46a]">{p.years}</p>
-                  <h3 className="mt-2 text-lg text-[#0b1f38]">{p.school}</h3>
-                  <p className="mt-1 text-sm text-[#1a3a63]">{t(p.role)}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-16">
